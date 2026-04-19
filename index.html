@@ -3,65 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Сессия 3D‑решений | Коротко и по делу</title>
-  <meta name="description" content="Управленческая сессия для руководителей органов власти. Без долгих внедрений. Фокус на решении и первых шагах.">
+  <title>Сессия 3D‑решений | Пространство для сложных решений</title>
+  <meta name="description" content="Закрытая консультация для руководителей власти и муниципалитетов. Внешний взгляд с глубоким пониманием внутреннего контекста госуправления.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-hero: #0F172A;
-      --bg-light: #F8FAFC;
+      --bg-hero: #1E293B;
+      --bg-light: #F3F4F6;
       --bg-white: #FFFFFF;
-      --text: #334155;
-      --text-muted: #64748B;
-      --heading: #0B1120;
-      --accent: #0EA5E9;
-      --border: #E2E8F0;
-      --radius: 6px;
-      --max-w: 960px;
+      --text: #374151;
+      --text-muted: #6B7280;
+      --heading: #111827;
+      --accent: #475569;
+      --border: #E5E7EB;
+      --radius: 10px;
+      --max-w: 920px;
       --font: 'Inter', system-ui, sans-serif;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: var(--font); color: var(--text); line-height: 1.6; background: var(--bg-white); -webkit-font-smoothing: antialiased; }
-    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
-    h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; line-height: 1.15; color: #F8FAFC; margin-bottom: 16px; }
-    h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 600; margin-bottom: 36px; color: var(--heading); }
-    h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 6px; color: var(--heading); }
-    p { margin-bottom: 12px; }
-    .hero { background: var(--bg-hero); padding: 110px 0 100px; text-align: center; }
-    .hero-sub { font-size: 1.15rem; color: #94A3B8; max-width: 680px; margin: 0 auto 28px; }
-    .price { font-size: 1.8rem; font-weight: 700; color: #E2E8F0; margin-bottom: 24px; }
-    .btn-group { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
-    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 26px; border-radius: var(--radius); text-decoration: none; font-weight: 500; font-size: 1rem; transition: 0.2s ease; min-width: 180px; }
-    .btn-tg { background: #0EA5E9; color: #fff; }
-    .btn-wa { background: #22C55E; color: #fff; }
-    .btn:hover { opacity: 0.9; transform: translateY(-2px); }
-    section { padding: 72px 0; border-bottom: 1px solid var(--border); }
+    body { font-family: var(--font); color: var(--text); line-height: 1.7; background: var(--bg-white); -webkit-font-smoothing: antialiased; }
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 28px; }
+    h1 { font-size: clamp(1.9rem, 4.5vw, 2.8rem); font-weight: 600; line-height: 1.25; color: #F9FAFB; margin-bottom: 18px; }
+    h2 { font-size: clamp(1.4rem, 3.2vw, 1.9rem); font-weight: 600; margin-bottom: 32px; color: var(--heading); letter-spacing: -0.01em; }
+    h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 8px; color: var(--heading); }
+    p { margin-bottom: 14px; color: var(--text); }
+    .hero { background: var(--bg-hero); padding: 100px 0 110px; text-align: center; }
+    .hero-sub { font-size: 1.2rem; color: #CBD5E1; max-width: 660px; margin: 0 auto 32px; }
+    .price { font-size: 1.7rem; font-weight: 600; color: #E2E8F0; margin-bottom: 26px; }
+    .btn-group { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 15px 28px; border-radius: var(--radius); text-decoration: none; font-weight: 500; font-size: 1rem; transition: 0.2s ease; min-width: 190px; background: #374151; color: #fff; }
+    .btn:hover { background: #4B5563; transform: translateY(-2px); }
+    section { padding: 68px 0; border-bottom: 1px solid var(--border); }
     section:last-of-type { border: none; }
     .alt-bg { background: var(--bg-light); }
-    .list { list-style: none; display: grid; gap: 12px; }
-    .list li { padding-left: 22px; position: relative; font-size: 1.02rem; }
-    .list li::before { content: ""; position: absolute; left: 0; top: 9px; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; }
-    .steps { display: grid; gap: 16px; }
-    .step { background: var(--bg-light); padding: 20px; border-radius: var(--radius); border: 1px solid var(--border); }
-    .step p { margin: 0; font-size: 0.98rem; color: var(--text); }
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: flex-start; }
+    .list { list-style: none; display: grid; gap: 16px; }
+    .list li { padding-left: 24px; position: relative; font-size: 1.05rem; color: var(--text); }
+    .list li::before { content: "•"; position: absolute; left: 0; top: 0; color: var(--accent); font-size: 1.4rem; line-height: 1.5; }
+    .steps { display: grid; gap: 20px; }
+    .step { background: var(--bg-white); padding: 24px; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: 0 2px 6px rgba(0,0,0,0.03); }
+    .step p { margin: 0; font-size: 0.99rem; color: var(--text); }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: flex-start; }
     @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } .btn-group { flex-direction: column; } .btn { width: 100%; } }
     .text-center { text-align: center; }
-    footer { text-align: center; padding: 40px 0; color: var(--text-muted); font-size: 0.85rem; background: var(--bg-light); border-top: 1px solid var(--border); }
+    .divider { width: 50px; height: 1px; background: var(--accent); margin: 32px auto; opacity: 0.6; }
+    .muted { color: var(--text-muted); }
+    footer { text-align: center; padding: 44px 0; color: var(--text-muted); font-size: 0.85rem; background: var(--bg-light); border-top: 1px solid var(--border); }
   </style>
 </head>
 <body>
 
 <header class="hero">
   <div class="container">
-    <h1>Решения, которые можно реализовать</h1>
-    <p class="hero-sub">Сессия 3D-решений для руководителей органов власти и муниципалитетов.</p>
+    <h1>Пространство для сложных управленческих решений</h1>
+    <p class="hero-sub">Помогаю руководителям власти и муниципалитетов находить рабочие варианты, когда стандартные методы не срабатывают.</p>
     <div class="price">7 000 ₽</div>
     <div class="btn-group">
-      <a href="https://t.me/ваш_ник" target="_blank" class="btn btn-tg">Написать в Telegram</a>
-      <a href="https://wa.me/ваш_номер" target="_blank" class="btn btn-wa">Написать в WhatsApp</a>
+      <a href="https://t.me/ваш_ник" target="_blank" class="btn">Написать в Telegram</a>
+      <a href="https://wa.me/ваш_номер" target="_blank" class="btn">Написать в WhatsApp</a>
     </div>
   </div>
 </header>
@@ -70,9 +70,9 @@
   <div class="container">
     <h2>Для кого</h2>
     <ul class="list">
-      <li>Руководители управлений, отделов и подведомственных структур</li>
-      <li>Руководители проектов в городской экономике, МСП, инфраструктуре, цифровизации</li>
-      <li>Те, кто принимает решения в условиях ограничений и высокой цены ошибки</li>
+      <li>Руководители управлений, отделов и муниципальных учреждений</li>
+      <li>Лидеры проектов в городской экономике, МСП, инфраструктуре, цифровизации</li>
+      <li>Те, кто работает в условиях высокой ответственности и нехватки пространства для манёвра</li>
     </ul>
   </div>
 </section>
@@ -80,12 +80,13 @@
 <section class="alt-bg">
   <div class="container">
     <h2>Когда особенно полезно</h2>
-    <p style="font-size: 1.1rem; margin-bottom: 20px;">Когда стандартные алгоритмы тормозят, а сроки не позволяют экспериментировать.</p>
+    <p style="font-size: 1.1rem; margin-bottom: 22px;">Когда когнитивная нагрузка растёт, а цена ошибки слишком высока для экспериментов.</p>
     <ul class="list">
-      <li>Нужно быстро согласовать позицию между ведомствами</li>
-      <li>Данные противоречат практике, требуется внешняя проверка</li>
-      <li>Есть ощущение «тупика», но рабочее решение существует</li>
-      <li>Требуется перевести стратегию в пошаговый план без воды</li>
+      <li>Нужно согласовать позицию со стейкхолдерами при жёстких рамках</li>
+      <li>Требуется выбрать сценарий без потери управляемости</li>
+      <li>Данные противоречат практике, нужен внешний взгляд</li>
+      <li>Стратегическая задача требует перевода в понятные шаги</li>
+      <li>Есть системный «тупик», но контекст подсказывает, что решение существует</li>
     </ul>
   </div>
 </section>
@@ -94,11 +95,11 @@
   <div class="container">
     <h2>Почему я</h2>
     <ul class="list">
-      <li>10 лет в госуправлении и инфраструктуре. Руководил технопарком и поддержкой МСП</li>
-      <li>Знаю, где ломаются планы и почему. Не даю теорию</li>
-      <li>Работаю с вашими данными, вашими ограничениями, вашей зоной ответственности</li>
-      <li>ИИ и интуиция — только для проверки гипотез и снятия когнитивных искажений</li>
-      <li>Фокус на результате, а не на процессе обсуждения</li>
+      <li>Я сам прошёл через бюджетные циклы, нормативные ограничения и ответственность за инфраструктурные проекты</li>
+      <li>Знаю, как ощущается вес решения, когда на кону ресурсы и репутация территории</li>
+      <li>Использую ИИ для объективной аналитики, интуитивные практики — для финальной проверки</li>
+      <li>Работаю на равных, без лекций и шаблонных методик</li>
+      <li>Моя цель — снизить когнитивный шум и вернуть вам управленческую ясность</li>
     </ul>
   </div>
 </section>
@@ -107,10 +108,10 @@
   <div class="container">
     <h2>Как проходит сессия</h2>
     <div class="steps">
-      <div class="step"><h3>1. Контекст</h3><p>Фиксируем задачу, ограничения и зоны ответственности. Отсекаем второстепенное.</p></div>
-      <div class="step"><h3>2. Анализ</h3><p>Проверяем данные и нормативку. ИИ моделирует сценарии и риски за минуты.</p></div>
-      <div class="step"><h3>3. Выбор</h3><p>Сравниваем варианты по реализуемости. Интуитивная проверка отсеивает хрупкие решения.</p></div>
-      <div class="step"><h3>4. План</h3><p>Фиксируем управленческое решение, точки контроля и первые шаги.</p></div>
+      <div class="step"><h3>1. Контекст</h3><p>Фиксируем задачу, ключевых участников и реальные рамки. Определяем, что действительно влияет на результат.</p></div>
+      <div class="step"><h3>2. Анализ</h3><p>Работаем с данными и нормативной базой. ИИ помогает протестировать сценарии и выявить скрытые риски.</p></div>
+      <div class="step"><h3>3. Выбор</h3><p>Сравниваем варианты по реализуемости. Интуитивная проверка отсеивает решения, не выдерживающие давления среды.</p></div>
+      <div class="step"><h3>4. План</h3><p>Фиксируем управленческое решение, точки контроля и первые шаги. Синхронизируемся на контрольной встрече.</p></div>
     </div>
   </div>
 </section>
@@ -119,11 +120,11 @@
   <div class="container">
     <h2>Что вы получаете</h2>
     <ul class="list">
-      <li>Чёткое решение с зафиксированной логикой выбора</li>
+      <li>Чёткое управленческое решение с зафиксированной логикой выбора</li>
       <li>Структурированный план действий на ближайший период</li>
-      <li>Понимание, как обойти ограничения и задействовать ресурсы</li>
-      <li>Запись сессии и краткий протокол</li>
-      <li>Follow-up (30–45 мин) через неделю для корректировки</li>
+      <li>Понимание, как обойти ключевые ограничения и задействовать ресурсы</li>
+      <li>Запись сессии и краткий протокол решений</li>
+      <li>Follow-up (30–45 мин) через 1–2 недели для корректировки вектора</li>
     </ul>
   </div>
 </section>
@@ -132,17 +133,26 @@
   <div class="container grid-2">
     <div>
       <h2>Формат и стоимость</h2>
-      <p style="font-size: 1.1rem;"><strong>Онлайн.</strong> Одна сессия (2–2,5 часа) + контрольная встреча (30–45 мин).</p>
-      <p class="muted" style="color: var(--text-muted);">Без долгих внедрений. Фокус на принятии решения и первых шагах.</p>
+      <p style="font-size: 1.1rem;"><strong>Онлайн‑встреча.</strong> Глубинная проработка (2–2,5 часа) + контрольная встреча (30–45 минут).</p>
+      <p class="muted">Формат позволяет снять информационный шум, не растягивая процесс. Без скрытых условий и дополнительных оплат.</p>
     </div>
     <div>
-      <div class="price" style="color: var(--heading); margin-bottom: 12px;">7 000 ₽</div>
-      <p style="margin-bottom: 24px; color: var(--text-muted);">за полный цикл. Без скрытых условий.</p>
+      <div class="price" style="color: var(--heading); margin-bottom: 14px;">7 000 ₽</div>
+      <p style="margin-bottom: 26px; color: var(--text-muted);">за полный цикл. Без скрытых условий.</p>
       <div class="btn-group" style="justify-content: flex-start;">
-        <a href="https://t.me/ваш_ник" target="_blank" class="btn btn-tg">Telegram</a>
-        <a href="https://wa.me/ваш_номер" target="_blank" class="btn btn-wa">WhatsApp</a>
+        <a href="https://t.me/ваш_ник" target="_blank" class="btn">Telegram</a>
+        <a href="https://wa.me/ваш_номер" target="_blank" class="btn">WhatsApp</a>
       </div>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="container text-center" style="max-width: 720px; margin-left: auto; margin-right: auto;">
+    <h2>Кто проводит сессию</h2>
+    <p>Более 10 лет на стыке госуправления, поддержки МСП и инфраструктурных проектов. Руководил отделом поддержки предпринимательства и технопарком. Понимаю нормативку, бюджетные ограничения и логику муниципального управления.</p>
+    <div class="divider"></div>
+    <p style="font-size: 1.15rem; font-style: italic; color: var(--heading); margin-top: 0;">Не даю универсальный ответ. Помогаю увидеть систему целиком, снять когнитивный шум и принять решение, которое вы сможете реализовать в существующих условиях.</p>
   </div>
 </section>
 
