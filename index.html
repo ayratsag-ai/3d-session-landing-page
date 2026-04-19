@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сессия 3D-решения для руководителей органов власти</title>
+    <title>Сессия 3D-решения для руководителей органов власти и муниципалитетов</title>
     <style>
         * {
             margin: 0;
@@ -13,45 +13,55 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
+            color: #1f2937;
+            max-width: 1180px;
             margin: 0 auto;
             padding: 20px;
-            background: #f8f9fa;
+            background: #f3f6fb;
         }
         .hero {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
             color: white;
             text-align: center;
-            padding: 60px 20px;
-            border-radius: 12px;
-            margin-bottom: 40px;
+            padding: 64px 24px;
+            border-radius: 18px;
+            margin-bottom: 28px;
+            box-shadow: 0 18px 45px rgba(30, 58, 138, 0.18);
         }
         .hero h1 {
             font-size: 2.2em;
-            margin-bottom: 10px;
-            font-weight: 700;
+            line-height: 1.18;
+            margin-bottom: 14px;
+            font-weight: 800;
         }
         .hero p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            opacity: 0.95;
+            font-size: 1.08em;
+            max-width: 900px;
+            margin: 0 auto 14px auto;
+            opacity: 0.98;
+        }
+        .price-top {
+            margin-top: 10px;
+            font-size: 1.15em;
+            font-weight: 700;
+            color: #dbeafe;
         }
         .btn-group {
             display: flex;
-            gap: 15px;
+            gap: 14px;
             justify-content: center;
             flex-wrap: wrap;
+            margin-top: 26px;
         }
         .btn {
             background: #10b981;
             color: white;
-            padding: 15px 30px;
+            padding: 15px 24px;
             text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 1.1em;
-            transition: all 0.3s;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1.02em;
+            transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -59,144 +69,226 @@
         .btn:hover {
             background: #059669;
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+            box-shadow: 0 10px 26px rgba(16, 185, 129, 0.25);
         }
         .btn-wa {
             background: #25D366;
         }
         .btn-wa:hover {
-            background: #128C7E;
+            background: #1fa956;
         }
         .section {
             background: white;
-            padding: 40px;
-            margin-bottom: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 32px 30px;
+            margin-bottom: 22px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
         }
         .section h2 {
             color: #1e3a8a;
-            font-size: 1.6em;
-            margin-bottom: 20px;
-            border-bottom: 3px solid #3b82f6;
+            font-size: 1.45em;
+            margin-bottom: 18px;
             padding-bottom: 10px;
-        }
-        .for-who, .requests {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            border-bottom: 3px solid #3b82f6;
         }
         ul {
             list-style: none;
         }
         ul li {
-            padding: 12px 0;
+            padding: 12px 14px 12px 18px;
             border-left: 4px solid #3b82f6;
-            padding-left: 20px;
-            margin-bottom: 8px;
             background: #f8fafc;
-            border-radius: 6px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        blockquote {
+            margin-top: 18px;
+            padding: 18px 20px;
+            background: #eff6ff;
+            border-left: 5px solid #2563eb;
+            border-radius: 10px;
+            color: #1e293b;
         }
         .steps {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 16px;
         }
         .step {
-            background: #f1f5f9;
-            padding: 25px;
-            border-radius: 10px;
-            border-left: 6px solid #10b981;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #10b981;
         }
         .step h3 {
             color: #1e3a8a;
-            margin-bottom: 12px;
-            font-size: 1.1em;
+            margin-bottom: 10px;
+            font-size: 1.05em;
         }
         .price-section {
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #eef2ff 100%);
             text-align: center;
-            border: 2px solid #3b82f6;
+            border: 2px solid #c7d2fe;
         }
         .price {
-            font-size: 2.5em;
-            font-weight: 800;
+            font-size: 2.4em;
+            font-weight: 900;
             color: #059669;
-            margin: 20px 0;
+            margin: 12px 0 10px;
         }
         .contacts {
             display: flex;
             justify-content: center;
-            gap: 40px;
-            margin-top: 20px;
-            font-size: 1.1em;
-            font-weight: 600;
+            gap: 24px;
+            margin-top: 14px;
+            font-size: 1.05em;
+            font-weight: 700;
+            flex-wrap: wrap;
         }
         .contacts a {
             color: #1e3a8a;
             text-decoration: none;
         }
+        .contacts a:hover {
+            text-decoration: underline;
+        }
         .about {
             text-align: center;
-            padding: 30px;
-            background: #1e40af;
+            padding: 24px;
+            background: #0f2f6b;
             color: white;
-            border-radius: 12px;
+            border-radius: 16px;
+            margin-top: 20px;
+        }
+        .about h2 {
+            border-bottom: none;
+            color: white;
+            margin-bottom: 12px;
+            padding-bottom: 0;
+        }
+        .about p {
+            max-width: 900px;
+            margin: 0 auto;
         }
         @media (max-width: 768px) {
+            body {
+                padding: 14px;
+            }
+            .hero {
+                padding: 44px 18px;
+            }
             .hero h1 {
-                font-size: 1.8em;
+                font-size: 1.65em;
             }
             .hero p {
-                font-size: 1.1em;
+                font-size: 1.0em;
+            }
+            .section {
+                padding: 24px 18px;
             }
             .btn-group {
                 flex-direction: column;
-                align-items: center;
+                align-items: stretch;
             }
-            .section {
-                padding: 25px 20px;
+            .btn {
+                justify-content: center;
             }
-            .steps {
-                grid-template-columns: 1fr;
+            .price {
+                font-size: 2em;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
+
     <section class="hero">
-        <h1>Сессия 3D-решения для руководителей органов власти и муниципалитетов</h1>
-        <p>Помогаю руководителям гос- и муниципальных структур принимать сложные управленческие решения на стыке данных, практического опыта и интуиции.</p>
+        <h1>Сессия 3D‑решения для руководителей органов власти и муниципалитетов</h1>
+        <p>Помогаю принимать сложные управленческие решения на стыке данных, практического опыта и интуиции — быстро, структурно и без лишнего шума.</p>
+        <div class="price-top">Стоимость: 7 000 ₽ за сессию</div>
         <div class="btn-group">
-            <a href="https://t.me/Airat_Sagdeev" class="btn" target="_blank">
-                📱 Написать в Telegram
-            </a>
-            <a href="https://wa.me/79631255963" class="btn btn-wa" target="_blank">
-                💬 Написать в WhatsApp
-            </a>
+            <a href="https://t.me/AYRATSAGDEEV" class="btn" target="_blank" rel="noopener">📱 Написать в Telegram</a>
+            <a href="https://wa.me/79631255963" class="btn btn-wa" target="_blank" rel="noopener">💬 Написать в WhatsApp</a>
         </div>
     </section>
 
-    <!-- For whom -->
     <section class="section">
         <h2>Для кого</h2>
-        <div class="for-who">
-            <ul>
-                <li>Руководители управлений и отделов органов власти</li>
-                <li>Руководители муниципальных учреждений и подведомственных организаций</li>
-                <li>Руководители проектов в сфере городской экономики, МСП, инфраструктуры, цифровизации</li>
-            </ul>
+        <u
+        <ul>
+            >Руководители управлений и отделов органов власти.</l/li>
+            >Руководители муниципальных учреждений и подведомственных организаций.</l/li>
+            >Руководители проектов в городской экономике, МСП, инфраструктуре, цифровизации.</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>С какими запросами приходят</h2>
+        <u
+        <ul>
+            >Нужно принять 1–3 важных решения: по структуре управления, команде, проекту, объекту инфраструктуры.</l/li>
+            >Есть несколько вариантов, но нет уверенности, какой выбрать.</l/li>
+            >Проект «застрял»: не двигается МЧП, инфраструктурный объект, площадка, цифровой проект.</l/li>
+            >Нужен сторонний взгляд человека, который понимает и специфику власти, и логику бизнеса.</li>
+        </ul>
+        <blockquote>
+            Более 10 лет работаю на стыке госуправления и развития предпринимательства, руководил отделом поддержки МСП и технопарком. Понимаю ограничения бюджетной системы, нормативку и политический контекст, но мыслю категориями эффективности, сервисов и экосистем.
+        </blockquote>
+    </section>
+
+    <section class="section">
+        <h2>Почему со мной удобно работать</h2>
+        <u
+        <ul>
+            >Более 10 лет на стыке госуправления, поддержки МСП и развития инфраструктурных проектов.</l/li>
+            >Руководил отделом поддержки предпринимательства и технопарком.</l/li>
+            >Умею смотреть на задачу одновременно через нормативку, управленческую логику и практическую эффективность.</l/li>
+            >Помогаю быстро сузить варианты, увидеть риски и выбрать рабочее решение.</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Как проходит сессия</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1. Разбор ситуации</h3>
+                <p>Анализируем контекст, полномочия, стейкхолдеров, ресурсы и ограничения. Формулируем 1–3 ключевых вопроса.</p>
+            </div>
+            <div class="step">
+                <h3>2. Аналитика через ИИ</h3>
+                <p>Прогоняем задачу через ИИ‑инструменты: сценарии, риски, идеи решений. Оставляем только реалистичные варианты.</p>
+            </div>
+            <div class="step">
+                <h3>3. Интуитивный уровень</h3>
+                <p>Короткая практика для ясности, просмотр сценариев «из будущего», соединение логики и внутреннего ощущения.</p>
+            </div>
+            <div class="step">
+                <h3>4. Фиксация решений</h3>
+                <p>Определяем выбранные решения, формируем план на 1–3 месяца и критерии, по которым видно движение вперёд.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Requests -->
-    <section class="section">
-        <h2>С какими запросами приходят</h2>
-        <div class="requests">
-            <ul>
-                <li>Нужно принять 1–3 важных решения: по структуре управления, команде, проекту, объекту инфраструктуры</li>
-                <li>Есть несколько вариантов, но нет уверенности, какой выбрать</li>
-                <li>Проект «застрял»: не двигается МЧП, инфраструктурный объект, площадка, цифровой проект</li>
-            </ul>
-            <blockquote style="margin-top: 20px; padding: 20px; background: #f8fafc; border-left
+    <section class="section price-section">
+        <h2>Что вы получаете</h2>
+        <u
+        <ul>
+            >Ясную картину ситуации и ключевых управленческих развилок.</l/li>
+            >2–3 жизнеспособных сценария с плюсами и минусами в рамках гос/муниципальной системы.</l/li>
+            >Выбранные решения, которым вы доверяете и рационально, и внутренне.</l/li>
+            >Конкретный план действий на 1–3 месяца.</li>
+        </ul>
+        <div class="price">7 000 ₽</div>
+        <p><strong>Формат:</strong> 1 сессия 2–2,5 часа + follow‑up 30–45 минут.<br>Письменное резюме сессии: ключевые выводы, решения, план действий.</p>
+        <div class="contacts">
+            <a href="https://t.me/AYRATSAGDEEV" target="_blank" rel="noopener">Telegram: @AYRATSAGDEEV</a>
+            <a href="https://wa.me/79631255963" target="_blank" rel="noopener">WhatsApp: +7 963 125 59 63</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>Кто проводит сессию</h2>
+        <p>Айрат Сагдеев — руководитель технопарка (ИТ‑парк, Набережные Челны), более 10 лет опыта в муниципальном управлении, поддержке МСП и развитии инфраструктурных проектов. Использую ИИ и методики работы с интуицией для поддержки управленческих решений.</p>
+    </section>
+
+</body>
+</html>
