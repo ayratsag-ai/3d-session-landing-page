@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сессия 3D-решения для руководителей органов власти</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+        .hero h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            background: #10b981;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn:hover {
+            background: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+        }
+        .btn-wa {
+            background: #25D366;
+        }
+        .btn-wa:hover {
+            background: #128C7E;
+        }
+        .section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .section h2 {
+            color: #1e3a8a;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 10px;
+        }
+        .for-who, .requests {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        ul {
+            list-style: none;
+        }
+        ul li {
+            padding: 12px 0;
+            border-left: 4px solid #3b82f6;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            background: #f8fafc;
+            border-radius: 6px;
+        }
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .step {
+            background: #f1f5f9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 6px solid #10b981;
+        }
+        .step h3 {
+            color: #1e3a8a;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        .price-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            text-align: center;
+            border: 2px solid #3b82f6;
+        }
+        .price {
+            font-size: 2.5em;
+            font-weight: 800;
+            color: #059669;
+            margin: 20px 0;
+        }
+        .contacts {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+        .contacts a {
+            color: #1e3a8a;
+            text-decoration: none;
+        }
+        .about {
+            text-align: center;
+            padding: 30px;
+            background: #1e40af;
+            color: white;
+            border-radius: 12px;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8em;
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .btn-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            .section {
+                padding: 25px 20px;
+            }
+            .steps {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Сессия 3D-решения для руководителей органов власти и муниципалитетов</h1>
+        <p>Помогаю руководителям гос- и муниципальных структур принимать сложные управленческие решения на стыке данных, практического опыта и интуиции.</p>
+        <div class="btn-group">
+            <a href="https://t.me/Airat_Sagdeev" class="btn" target="_blank">
+                📱 Написать в Telegram
+            </a>
+            <a href="https://wa.me/79631255963" class="btn btn-wa" target="_blank">
+                💬 Написать в WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- For whom -->
+    <section class="section">
+        <h2>Для кого</h2>
+        <div class="for-who">
+            <ul>
+                <li>Руководители управлений и отделов органов власти</li>
+                <li>Руководители муниципальных учреждений и подведомственных организаций</li>
+                <li>Руководители проектов в сфере городской экономики, МСП, инфраструктуры, цифровизации</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Requests -->
+    <section class="section">
+        <h2>С какими запросами приходят</h2>
+        <div class="requests">
+            <ul>
+                <li>Нужно принять 1–3 важных решения: по структуре управления, команде, проекту, объекту инфраструктуры</li>
+                <li>Есть несколько вариантов, но нет уверенности, какой выбрать</li>
+                <li>Проект «застрял»: не двигается МЧП, инфраструктурный объект, площадка, цифровой проект</li>
+            </ul>
+            <blockquote style="margin-top: 20px; padding: 20px; background: #f8fafc; border-left
