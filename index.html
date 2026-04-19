@@ -3,253 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Сессия 3D‑решения | Консультации для руководителей</title>
-  <meta name="description" content="Стратегические сессии для руководителей органов власти и муниципалитетов. Управленческая ясность на стыке данных, опыта, ИИ и интуитивной проверки.">
+  <title>Сессия 3D‑решений | Коротко и по делу</title>
+  <meta name="description" content="Управленческая сессия для руководителей органов власти. Без долгих внедрений. Фокус на решении и первых шагах.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-hero: #0B1120;
+      --bg-hero: #0F172A;
       --bg-light: #F8FAFC;
       --bg-white: #FFFFFF;
-      --text-main: #334155;
+      --text: #334155;
       --text-muted: #64748B;
-      --heading: #0F172A;
-      --accent: #2563EB;
+      --heading: #0B1120;
+      --accent: #0EA5E9;
       --border: #E2E8F0;
-      --radius: 8px;
+      --radius: 6px;
       --max-w: 960px;
-      --font: 'Inter', system-ui, -apple-system, sans-serif;
-      --transition: all 0.2s ease;
+      --font: 'Inter', system-ui, sans-serif;
     }
-
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    
-    body {
-      font-family: var(--font);
-      color: var(--text-main);
-      line-height: 1.65;
-      background: var(--bg-white);
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .container {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* Typography */
-    h1, h2, h3 { font-weight: 600; line-height: 1.25; margin-bottom: 16px; }
-    h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); letter-spacing: -0.02em; color: #F8FAFC; }
-    h2 { font-size: clamp(1.6rem, 4vw, 2.1rem); margin-bottom: 48px; color: var(--heading); }
-    h3 { font-size: 1.15rem; margin-bottom: 8px; color: var(--heading); }
-    p { margin-bottom: 14px; color: var(--text-main); }
-    p.muted { color: var(--text-muted); }
-
-    /* Sections */
-    section { padding: 88px 0; border-bottom: 1px solid var(--border); }
-    section:last-of-type { border-bottom: none; }
+    body { font-family: var(--font); color: var(--text); line-height: 1.6; background: var(--bg-white); -webkit-font-smoothing: antialiased; }
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; line-height: 1.15; color: #F8FAFC; margin-bottom: 16px; }
+    h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 600; margin-bottom: 36px; color: var(--heading); }
+    h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 6px; color: var(--heading); }
+    p { margin-bottom: 12px; }
+    .hero { background: var(--bg-hero); padding: 110px 0 100px; text-align: center; }
+    .hero-sub { font-size: 1.15rem; color: #94A3B8; max-width: 680px; margin: 0 auto 28px; }
+    .price { font-size: 1.8rem; font-weight: 700; color: #E2E8F0; margin-bottom: 24px; }
+    .btn-group { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 26px; border-radius: var(--radius); text-decoration: none; font-weight: 500; font-size: 1rem; transition: 0.2s ease; min-width: 180px; }
+    .btn-tg { background: #0EA5E9; color: #fff; }
+    .btn-wa { background: #22C55E; color: #fff; }
+    .btn:hover { opacity: 0.9; transform: translateY(-2px); }
+    section { padding: 72px 0; border-bottom: 1px solid var(--border); }
+    section:last-of-type { border: none; }
     .alt-bg { background: var(--bg-light); }
-
-    /* Lists */
-    .check-list { list-style: none; display: grid; gap: 14px; }
-    .check-list li {
-      position: relative;
-      padding-left: 26px;
-      font-size: 1.05rem;
-      color: var(--text-main);
-    }
-    .check-list li::before {
-      content: "";
-      position: absolute;
-      left: 0; top: 10px;
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: var(--accent);
-      opacity: 0.8;
-    }
-
-    /* Buttons */
-    .btn-group { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px; }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 14px 28px;
-      border-radius: var(--radius);
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 1rem;
-      transition: var(--transition);
-      min-width: 160px;
-    }
-    .btn-tg { background: #24A1DE; color: #fff; }
-    .btn-wa { background: #25D366; color: #fff; }
-    .btn:hover { opacity: 0.92; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-
-    /* Steps Grid */
-    .steps { display: grid; gap: 20px; }
-    .step-card {
-      background: var(--bg-light);
-      padding: 24px;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      transition: var(--transition);
-    }
-    .step-card:hover { border-color: #CBD5E1; background: #F1F5F9; }
-    .step-card p { margin: 0; font-size: 0.98rem; }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      section { padding: 64px 0; }
-      h2 { margin-bottom: 32px; }
-      .btn-group { flex-direction: column; }
-      .btn { width: 100%; }
-    }
-
-    /* Utilities */
+    .list { list-style: none; display: grid; gap: 12px; }
+    .list li { padding-left: 22px; position: relative; font-size: 1.02rem; }
+    .list li::before { content: ""; position: absolute; left: 0; top: 9px; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; }
+    .steps { display: grid; gap: 16px; }
+    .step { background: var(--bg-light); padding: 20px; border-radius: var(--radius); border: 1px solid var(--border); }
+    .step p { margin: 0; font-size: 0.98rem; color: var(--text); }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: flex-start; }
+    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } .btn-group { flex-direction: column; } .btn { width: 100%; } }
     .text-center { text-align: center; }
-    .max-w-narrow { max-width: 720px; margin-left: auto; margin-right: auto; }
-    .price-tag { font-size: 1.6rem; font-weight: 600; margin: 24px 0 8px; color: #94A3B8; }
-    .divider { height: 1px; background: var(--border); margin: 64px 0; width: 100%; }
+    footer { text-align: center; padding: 40px 0; color: var(--text-muted); font-size: 0.85rem; background: var(--bg-light); border-top: 1px solid var(--border); }
   </style>
 </head>
 <body>
 
-  <!-- Первый экран -->
-  <header class="hero" style="background: var(--bg-hero); padding: 120px 0 140px; text-align: center;">
-    <div class="container">
-      <p style="color: #94A3B8; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; font-size: 0.85rem;">Сессия 3D‑решения</p>
-      <h1>Для руководителей органов власти и муниципалитетов</h1>
-      <p style="font-size: 1.25rem; max-width: 700px; margin: 24px auto 12px; color: #E2E8F0;">Управленческая ясность на стыке данных, опыта, ИИ‑аналитики и интуитивной проверки.</p>
-      <p class="muted" style="margin-bottom: 32px; color: #94A3B8;">Помогаю принимать сложные решения без иллюзий и избыточной сложности.</p>
-      <div class="price-tag">7 000 ₽</div>
-      <div class="btn-group" style="justify-content: center;">
-        <a href="https://t.me/ваш_ник" target="_blank" class="btn btn-tg">Написать в Telegram</a>
-        <a href="https://wa.me/ваш_номер" target="_blank" class="btn btn-wa">Написать в WhatsApp</a>
-      </div>
+<header class="hero">
+  <div class="container">
+    <h1>Решения, которые можно реализовать</h1>
+    <p class="hero-sub">Сессия 3D-решений для руководителей органов власти и муниципалитетов.</p>
+    <div class="price">7 000 ₽</div>
+    <div class="btn-group">
+      <a href="https://t.me/ваш_ник" target="_blank" class="btn btn-tg">Написать в Telegram</a>
+      <a href="https://wa.me/ваш_номер" target="_blank" class="btn btn-wa">Написать в WhatsApp</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- Для кого -->
-  <section>
-    <div class="container">
-      <h2>Для кого</h2>
-      <ul class="check-list">
-        <li>Руководители органов государственной власти</li>
-        <li>Руководители муниципальных учреждений и ведомств</li>
-        <li>Руководители проектов в городской экономике, МСП, инфраструктуре, цифровизации</li>
-        <li>Люди, которые принимают решения в условиях ограничений, ответственности и высокой цены ошибки</li>
-      </ul>
+<section>
+  <div class="container">
+    <h2>Для кого</h2>
+    <ul class="list">
+      <li>Руководители управлений, отделов и подведомственных структур</li>
+      <li>Руководители проектов в городской экономике, МСП, инфраструктуре, цифровизации</li>
+      <li>Те, кто принимает решения в условиях ограничений и высокой цены ошибки</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <div class="container">
+    <h2>Когда особенно полезно</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 20px;">Когда стандартные алгоритмы тормозят, а сроки не позволяют экспериментировать.</p>
+    <ul class="list">
+      <li>Нужно быстро согласовать позицию между ведомствами</li>
+      <li>Данные противоречат практике, требуется внешняя проверка</li>
+      <li>Есть ощущение «тупика», но рабочее решение существует</li>
+      <li>Требуется перевести стратегию в пошаговый план без воды</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Почему я</h2>
+    <ul class="list">
+      <li>10 лет в госуправлении и инфраструктуре. Руководил технопарком и поддержкой МСП</li>
+      <li>Знаю, где ломаются планы и почему. Не даю теорию</li>
+      <li>Работаю с вашими данными, вашими ограничениями, вашей зоной ответственности</li>
+      <li>ИИ и интуиция — только для проверки гипотез и снятия когнитивных искажений</li>
+      <li>Фокус на результате, а не на процессе обсуждения</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <div class="container">
+    <h2>Как проходит сессия</h2>
+    <div class="steps">
+      <div class="step"><h3>1. Контекст</h3><p>Фиксируем задачу, ограничения и зоны ответственности. Отсекаем второстепенное.</p></div>
+      <div class="step"><h3>2. Анализ</h3><p>Проверяем данные и нормативку. ИИ моделирует сценарии и риски за минуты.</p></div>
+      <div class="step"><h3>3. Выбор</h3><p>Сравниваем варианты по реализуемости. Интуитивная проверка отсеивает хрупкие решения.</p></div>
+      <div class="step"><h3>4. План</h3><p>Фиксируем управленческое решение, точки контроля и первые шаги.</p></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Когда особенно полезно -->
-  <section class="alt-bg">
-    <div class="container">
-      <h2>Когда особенно полезно</h2>
-      <p style="font-size: 1.1rem; margin-bottom: 28px;">Когда ресурсы ограничены, а сроки не позволяют экспериментировать.</p>
-      <ul class="check-list">
-        <li>Нужно согласовать позицию между ведомствами при жёстких нормативных рамках</li>
-        <li>Требуется выбрать сценарий развития проекта без потери управляемости</li>
-        <li>Данные противоречат практике, и требуется внешняя аналитическая проверка</li>
-        <li>Необходимо перевести стратегическую задачу в пошаговый план действий</li>
-        <li>Есть ощущение системного «тупика», но контекст подсказывает, что рабочее решение существует</li>
-      </ul>
-    </div>
-  </section>
+<section>
+  <div class="container">
+    <h2>Что вы получаете</h2>
+    <ul class="list">
+      <li>Чёткое решение с зафиксированной логикой выбора</li>
+      <li>Структурированный план действий на ближайший период</li>
+      <li>Понимание, как обойти ограничения и задействовать ресурсы</li>
+      <li>Запись сессии и краткий протокол</li>
+      <li>Follow-up (30–45 мин) через неделю для корректировки</li>
+    </ul>
+  </div>
+</section>
 
-  <!-- Почему со мной удобно работать -->
-  <section>
-    <div class="container">
-      <h2>Почему со мной удобно работать</h2>
-      <ul class="check-list">
-        <li>Знаю внутренний контур госуправления: бюджетные циклы, регламенты, логику согласований и распределения ответственности</li>
-        <li>Не продаю методологии. Работаю с вашими данными, реальными ограничениями и ключевыми стейкхолдерами</li>
-        <li>ИИ использую как аналитический фильтр: убираю информационный шум, быстро проверяю гипотезы, моделирую последствия</li>
-        <li>Интуитивные практики применяю как инструмент внутренней валидации: помогают отсечь варианты, которые технически возможны, но управленчески уязвимы</li>
-        <li>Держу фокус на результате, а не на процессе обсуждения</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Как проходит сессия -->
-  <section class="alt-bg">
-    <div class="container">
-      <h2>Как проходит сессия</h2>
-      <div class="steps">
-        <div class="step-card">
-          <h3>1. Контекст</h3>
-          <p>Фиксируем задачу, ключевые ограничения и зоны ответственности. Определяем, что действительно влияет на результат.</p>
-        </div>
-        <div class="step-card">
-          <h3>2. Анализ</h3>
-          <p>Работаем с данными и нормативной базой. ИИ помогает протестировать сценарии и выявить скрытые риски.</p>
-        </div>
-        <div class="step-card">
-          <h3>3. Выбор</h3>
-          <p>Сравниваем варианты по реализуемости и последствиям. Интуитивная проверка отсеивает решения, которые не выдержат давления реальной среды.</p>
-        </div>
-        <div class="step-card">
-          <h3>4. План</h3>
-          <p>Фиксируем управленческое решение, точки контроля и первые шаги. Синхронизируемся на follow‑up.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Что вы получаете -->
-  <section>
-    <div class="container">
-      <h2>Что вы получаете</h2>
-      <ul class="check-list">
-        <li>Чёткое управленческое решение с зафиксированной логикой выбора</li>
-        <li>Структурированный план действий на ближайший период</li>
-        <li>Понимание, как обойти ключевые ограничения и задействовать доступные ресурсы</li>
-        <li>Запись сессии и краткий протокол решений</li>
-        <li>Follow‑up (30–45 мин) через 1–2 недели для корректировки вектора</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Формат и стоимость -->
-  <section class="alt-bg">
-    <div class="container">
+<section class="alt-bg">
+  <div class="container grid-2">
+    <div>
       <h2>Формат и стоимость</h2>
-      <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
-        <div style="flex: 1 1 400px;">
-          <p style="font-size: 1.1rem; margin-bottom: 8px;"><strong>Онлайн‑встреча.</strong> Одна стратегическая сессия (2–2,5 часа) + один follow‑up (30–45 минут).</p>
-          <p class="muted">Формат позволяет глубоко погрузиться в задачу, не растягивая процесс.</p>
-        </div>
-        <div style="flex: 1 1 300px; padding-top: 8px;">
-          <div style="font-size: 1.8rem; font-weight: 700; color: var(--heading); margin-bottom: 8px;">7 000 ₽</div>
-          <p style="margin-bottom: 24px;">за полный цикл. Без скрытых условий и дополнительных оплат.</p>
-          <div class="btn-group" style="margin-top: 0;">
-            <a href="https://t.me/ваш_ник" target="_blank" class="btn btn-tg">Telegram</a>
-            <a href="https://wa.me/ваш_номер" target="_blank" class="btn btn-wa">WhatsApp</a>
-          </div>
-        </div>
+      <p style="font-size: 1.1rem;"><strong>Онлайн.</strong> Одна сессия (2–2,5 часа) + контрольная встреча (30–45 мин).</p>
+      <p class="muted" style="color: var(--text-muted);">Без долгих внедрений. Фокус на принятии решения и первых шагах.</p>
+    </div>
+    <div>
+      <div class="price" style="color: var(--heading); margin-bottom: 12px;">7 000 ₽</div>
+      <p style="margin-bottom: 24px; color: var(--text-muted);">за полный цикл. Без скрытых условий.</p>
+      <div class="btn-group" style="justify-content: flex-start;">
+        <a href="https://t.me/ваш_ник" target="_blank" class="btn btn-tg">Telegram</a>
+        <a href="https://wa.me/ваш_номер" target="_blank" class="btn btn-wa">WhatsApp</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Кто проводит сессию -->
-  <section>
-    <div class="container text-center max-w-narrow">
-      <h2>Кто проводит сессию</h2>
-      <p>Более 10 лет на стыке муниципального управления, поддержки МСП и инфраструктурных проектов.</p>
-      <p>Руководил отделом поддержки предпринимательства и технопарком.</p>
-      <p>Работал с командами, бюджетами, развитием городской экономики.</p>
-      <div class="divider" style="width: 60px; margin: 32px auto;"></div>
-      <p style="font-size: 1.1rem; font-style: italic; color: var(--heading); margin-top: 0;">Моя задача — не дать универсальный ответ, а помочь увидеть систему целиком, снять когнитивный шум и принять решение, которое вы сможете реализовать в существующих условиях.</p>
-    </div>
-  </section>
-
-  <footer style="text-align: center; padding: 48px 0; background: #F8FAFC; color: #64748B; font-size: 0.85rem; border-top: 1px solid var(--border);">
-    <div class="container">© 2026 Сессия 3D‑решения. Все права защищены.</div>
-  </footer>
+<footer>© 2026 Сессия 3D‑решений. Все права защищены.</footer>
 
 </body>
 </html>
